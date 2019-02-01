@@ -1,0 +1,1 @@
+JDBC_CRUD is a simple CRUD app made for practicing JDBC.
