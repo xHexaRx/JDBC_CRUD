@@ -57,7 +57,7 @@ class JDBC_CRUDTest {
 			rs=db.readTable();
 		} catch (SQLException e) {
 			e.printStackTrace();
-			fail("Failed to delete programmer. SQLException");
+			fail("Failed to read database. SQLException");
 		}
 		assertNotNull(rs);
 	}
@@ -69,7 +69,7 @@ class JDBC_CRUDTest {
 			db.clear();
 		} catch (SQLException e) {
 			e.printStackTrace();
-			fail("Failed to delete programmer. SQLException");
+			fail("Failed to truncate table. SQLException");
 		}
 	}
 	
@@ -80,7 +80,7 @@ class JDBC_CRUDTest {
 			db.updateProgrammer(2, "Petya", "St.Petersburg", "Junior");
 		} catch (SQLException e) {
 			e.printStackTrace();
-			fail("Failed to create new programmer. SQLException");
+			fail("Failed to update database. SQLException");
 		}
 	}
 
