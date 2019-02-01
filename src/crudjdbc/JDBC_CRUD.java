@@ -57,6 +57,11 @@ public class JDBC_CRUD {
 		pstmt.executeUpdate();
 	}
 	
+	/**
+	 * Show table and return ResultSet.
+	 * @return Returns table contents in ResultSet.
+	 * @throws SQLException
+	 */
 	public ResultSet readTable() throws SQLException {
 		Statement stmt = connection.createStatement();
 		ResultSet rs = stmt.executeQuery("SELECT * FROM "+tableName);
