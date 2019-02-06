@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import org.junit.jupiter.api.Test;
 
 class JDBC_CRUDTest {
-	private static final String ADRESS = "jdbc:mysql://localhost:3306/jdbctest?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+	private static final String ADRESS = "jdbc:mysql://localhost:3306/jdbctest";
 	private static final String LOGIN="jdbc";
 	private static final String PASSWORD="jdbcTest@";
 	private static final String TABLE_NAME="programmers";
